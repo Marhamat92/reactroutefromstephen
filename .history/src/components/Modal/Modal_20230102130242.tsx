@@ -1,0 +1,19 @@
+import React from "react";
+import Button from "../Buttons/Button";
+
+type Props = {};
+
+function Modal({}: Props) {
+  return (
+    <div className='flex flex-col width-full'>
+      <h1>
+        If you wish to travel to another country please click accept button
+      </h1>
+      <Button success rounded>
+        Accept
+      </Button>
+    </div>
+  );
+}
+
+export default Modal;
