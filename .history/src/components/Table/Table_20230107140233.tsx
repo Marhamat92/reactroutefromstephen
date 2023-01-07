@@ -1,6 +1,5 @@
 import React from "react";
 import { AiFillSecurityScan } from "react-icons/ai";
-import { Fragment } from "react";
 
 type Props = {
   data: {
@@ -23,7 +22,7 @@ type Props = {
 function Table({ data, config, fnKey }: Props) {
   const renderedHeaders = config.map((column) => {
     if (column.header) {
-      return <Fragment key={column.label}>{column.header()}</Fragment>;
+      return column.header();
     }
 
     return <th key={column.label}>{column.label}</th>;

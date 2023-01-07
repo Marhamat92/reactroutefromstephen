@@ -20,9 +20,9 @@ function TablePage({}: Props) {
 
   const config = [
     {
-      label: "Fruit", // This is the column header
-      render: (fruit: { name: string }) => fruit.name, // This is the cell renderer
-      sortValue: (fruit: { name: string }) => fruit.name, // This is the value used for sorting
+      label: "Fruit",
+      render: (fruit: { name: string }) => fruit.name,
+      sortValue: (fruit: { name: string }) => fruit.name,
     },
     {
       label: "Color",
@@ -33,11 +33,6 @@ function TablePage({}: Props) {
     {
       label: "Score",
       render: (fruit: { score: number }) => fruit.score,
-      sortValue: (fruit: { score: number }) => fruit.score,
-    },
-    {
-      label: "Score Squared",
-      render: (fruit: { score: number }) => fruit.score ** 2,
       sortValue: (fruit: { score: number }) => fruit.score,
     },
     {

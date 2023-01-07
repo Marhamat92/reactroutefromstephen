@@ -8,15 +8,7 @@ type Props = {
     color: string;
     score: number;
   }[];
-  config: {
-    label: string;
-    render: (fruit: {
-      name: string;
-      color: string;
-      score: number;
-    }) => string | number | JSX.Element;
-    header?: () => JSX.Element;
-  }[];
+
   fnKey: (fruit: { name: string }) => string;
 };
 
