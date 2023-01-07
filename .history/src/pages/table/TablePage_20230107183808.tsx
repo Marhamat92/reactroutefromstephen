@@ -61,12 +61,8 @@ function TablePage({}: Props) {
 
   return (
     <>
-      <h1 className='text-black text-3xl font-bold py-2'>Table</h1>
-      <Table data={data} config={config} fnKey={fnKey} />
-      <h1 className='text-black text-3xl font-bold py-2 mt-4'>
-        Sortable Table
-      </h1>
-      <SortableTable data={data} config={config} fnKey={fnKey} />
+      <Table data={data} config={config} fnKey={fnKey} />;
+      <SortableTable data={data} config={config} fnKey={fnKey} />;
     </>
   );
 }
