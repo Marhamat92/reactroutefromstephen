@@ -7,7 +7,7 @@ import useSort from "../../hooks/useSort";
 
 function SortableTable(props) {
   const { config, data } = props; // Get the config and data from the props
-  const { sortedData, handleClick, sortOrder, sortBy } = useSort(data, config); // Get the sorted data, the handleClick function, the sortOrder and the sortBy from the useSort hook ....instead of using the code here
+  const { sortedData, handleClick, sortOrder, sortBy } = useSort(config, data); // Get the sorted data, the handleClick function, the sortOrder and the sortBy from the useSort hook ....instead of using the code here
 
 
   const updateConfig = config.map((column) => {  // Add onClick event to the header
