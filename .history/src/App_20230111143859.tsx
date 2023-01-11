@@ -37,7 +37,7 @@ function App() {
           <CounterPage initialState={15} />
         </Route>
         <Route path='/counterwithreducer'>
-          <CounterWithReducer initialState={10} />
+          <CounterWithReducer />
         </Route>
       </div>
     </div>
